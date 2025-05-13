@@ -1,0 +1,253 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+body {
+    background-color: #936171;
+    text-align: center;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 80px;
+}
+
+/* .player1 {
+
+    margin-right: 100px;
+}
+
+.player2 {
+    margin-left: 100px;
+} */
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 20px;
+    margin-left: 12px;
+    font-size: 8vmin;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background-color: white;
+    color: rgb(64, 63, 63);
+}
+
+.gamescreen {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60vmin;
+    width: 60vmin;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.gamearea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 99vw;
+    height: 70vh;
+}
+
+#restGame {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background-color: black;
+    color: white;
+}
+
+.winner {
+    text-align: center;
+}
+
+.msg-container {
+
+    height: 100vh;
+    /* width: 100px; */
+    background-color: transparent;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+}
+
+#newGamebtn {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background-color: black;
+    color: white;
+
+}
+
+.hide {
+    display: none;
+}
+
+.glow {
+    color: #000000;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.glow1 {
+    color: #000000;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ebebeb, 0 0 50px #e9e3e6, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fefefe, 0 0 40px #9d9d9d, 0 0 50px #ffffff, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@media(max-width:720px)and (max-height:1280px) {
+
+    .gamearea {
+        margin-top: 10vh;
+        height: 40vh;
+    }
+}
+
+@media(max-width:393px)and (max-height:873px) {
+
+    .player1 {
+        display: none;
+    }
+
+    .player2 {
+        display: none;
+    }
+
+    .gamescreen {
+
+        width: 80vw;
+    }
+
+    .gamearea {
+        /* height: 50vh; */
+        margin: 0px;
+    }
+
+}
+
+@media(max-width:376px)and (max-height:668px) {
+    .player1 {
+        display: none;
+    }
+
+    .player2 {
+        display: none;
+    }
+
+    .gamescreen {
+        margin-bottom: 100px;
+        width: 80vw;
+    }
+
+    .gamearea {
+        /* height: 50vh; */
+        margin: 0px;
+        margin-bottom: 100px;
+        margin-top: 60px;
+
+    }
+
+    h1 {
+        font-size: 70px;
+
+    }
+
+    .box {
+        height: 85px;
+        width: 85px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+}
+
+@media(min-width:400px)and (max-width:600px) {
+
+    .player1 {
+        display: none;
+    }
+
+    .player2 {
+        display: none;
+    }
+
+    .gamescreen {
+        width: 80vw;
+    }
+    .gamearea{
+        margin-bottom: 100px;
+
+    }
+}
+
+@media(min-width:200px)and (max-width:400px) {
+
+    .player1 {
+        display: none;
+    }
+
+    .player2 {
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .gamescreen {
+        width: 80vw;
+
+    }
+        .box {
+        height:70px;
+        width:70px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+}
+@media(min-width:560px)and (max-width:720px){
+    .gamearea{
+        margin-bottom: 150px;
+    }
+}
